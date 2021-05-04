@@ -6,4 +6,4 @@ from .serializers import AtracaoSerializer
 class AtracoeViewSet(ModelViewSet):
     queryset = Atracao.objects.all()
     serializer_class = AtracaoSerializer
-    filter_fields = ('category', 'in_stock')
+    filter_fields = ('nome', 'descricao')
