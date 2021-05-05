@@ -24,7 +24,6 @@ SECRET_KEY = 'l-cp1gz^o^2i%(r4n(1lm%mem2ai78pz#gr!+9fpu^v@nk^*iv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
@@ -131,3 +130,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000"
+]
